@@ -1,0 +1,101 @@
+{% load static %} 
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+      <title>Pipeline Staging Sales Management System</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'SalesManagementSystemApp/css/newsigninstyles.css' %}">  
+    </head>
+    
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+<nav class="navbar-brand offset-md-4">Pipeline Staging Sales Management System
+</nav>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="{%url 'SalesManagementSystemApp:SignUp'%}">Register</a>
+             </li>
+           <li class="nav-item">
+               <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Delete Account</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+<div class = "section-newtop">
+              
+<div class="form-container">
+    <div class="form-wrapper">
+        {% block content %}
+        <form class="form-detail" method="post" action="{% url 'SalesManagementSystemApp:SignIn' %}">
+            {% csrf_token %}
+            <div class="form-headingdetail">
+            <h2>Please Sign In</h2>
+            </div>
+            <div class="form-row">
+                {{ form.username.label_tag }}
+                {{ form.username }}
+            </div>
+            <div class="form-row">
+                {{ form.password.label_tag }}
+                {{ form.password }}
+            </div>
+            <div class="form-row form-row-last">
+                <input type="submit" class="register" value="Sign In">
+            </div>
+        </form>
+        {% endblock content %}
+    </div>
+</div>
+</div>
+ 
+<div class="bottom-container">
+    <div class="image-text-container">
+        <div class="image-container">
+    <img src="{% static 'SalesManagementSystemApp/images/Customer.jpg' %}">
+        </div>
+        <div class="text-container">
+            <p>Seek your Key Priority for the requisite basis of Pipeline 
+            Staging</p>
+        </div>
+    </div>
+    <div class="image-text-container">
+        <div class="image-container">
+ <img src="{% static 'SalesManagementSystemApp/images/Pipeline Stages.jpg' %}">
+        </div>
+        <div class="text-container">
+            <p>Add, toggle and manage your Pipeline Stages according to
+            your precedence</p>
+        </div>
+    </div>
+    <div class="image-text-container">
+        <div class="image-container">
+<img src="{% static 'SalesManagementSystemApp/images/Customer-Key Priority Relationship.jpg' %}">
+        </div>
+        <div class="text-container">
+            <p>An uninterrupted interaction with your Key Priority which
+            can help meet deadlines rapidly</p>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center text-lg-start fixed-bottom">
+  <div class="container-fluid p-3 row justify-content-center">
+    <div class="row">
+     <div class="text-center">
+       © Copyright: Pipeline Staging Sales Management System
+     </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
