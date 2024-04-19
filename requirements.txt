@@ -27,7 +27,6 @@ dill==0.3.8
 distro==1.5.0
 Django==4.2.11
 docutils==0.16
-ec2-hibinit-agent==1.0.8
 git-remote-codecommit==1.17
 gpg==1.15.1
 html5lib==1.1
