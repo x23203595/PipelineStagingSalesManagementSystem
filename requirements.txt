@@ -3,7 +3,6 @@ asgiref==3.7.2
 asn1crypto==1.5.1
 astroid==2.15.5
 attrs==20.3.0
-awscli==2.14.5
 awscrt==0.19.19
 awsebcli==3.20.10
 Babel==2.9.1
