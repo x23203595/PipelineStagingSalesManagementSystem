@@ -89,7 +89,6 @@ pytz==2022.7.1
 PyYAML==6.0.1
 qrcode==7.4.2
 readme_renderer==43.0
-release-notification==1.2
 reportlab==4.0.9
 requests==2.31.0
 requests-toolbelt==1.0.0

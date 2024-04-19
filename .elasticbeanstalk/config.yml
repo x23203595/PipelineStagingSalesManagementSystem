@@ -1,6 +1,6 @@
 branch-defaults:
   main:
-    environment: x23203595PipelineStagingSix
+    environment: x23203595PipelineStagingSeven
     group_suffix: null
 global:
   application_name: x23203595QuizzBean
