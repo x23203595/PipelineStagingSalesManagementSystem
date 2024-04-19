@@ -1,0 +1,89 @@
+{% load static %} 
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+      <title>Pipeline Staging Sales Management System</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'SalesManagementSystemApp/css/newadmincustomerliststyles.css' %}">  
+<link rel = "stylesheet" 
+href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <div class="collapse navbar-collapse justify-content-flex-start">
+            <ul class="navbar-nav">
+                 <li class="nav-item">
+                    <a class="nav-link" 
+                href="{%url 'SalesManagementSystemApp:AdminSignOut'%}">Admin Sign Out</a>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar-brand">Pipeline Staging Sales Management System</nav>
+         <div class="collapse navbar-collapse justify-content-end">
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                    <a class="nav-link" 
+                href="{%url 'SalesManagementSystemApp:AdminAbout'%}">Admin About</a>
+                </li>
+        </div>
+    </div>
+  </nav>
+
+{% block content %}  
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+            <th>Company Name</th>
+            <th>
+<a href="{% url 'SalesManagementSystemApp:AdminCustomerInsertPage' %}" 
+class="btn btn-outline-success">
+                    <i class="fas fa-plus"></i> Add New Customer
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for AdminCustomer in AdminCustomerList %}
+        <tr>
+            <td>{{ AdminCustomer.first_name }}</td>
+            <td>{{ AdminCustomer.last_name }}</td>
+            <td>{{ AdminCustomer.username }}</td>
+            <td>{{ AdminCustomer.company_name }}</td>
+            <td>
+<a href="{% url 'SalesManagementSystemApp:AdminCustomerUpdatePage' AdminCustomer.id %}" class="btn text-secondary px-0">
+    <i class="far fa-edit fa-lg"></i>
+</a>
+<form action="{% url 'SalesManagementSystemApp:AdminCustomerDeletePage' AdminCustomer.id %}" method="post" class="d-inline">
+    {% csrf_token %}
+    <button type="submit" class="btn">
+        <i class="far fa-trash-alt fa-lg text-danger"></i>
+    </button>
+</form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
+
+<footer class="bg-dark text-white text-center text-lg-start fixed-bottom">
+  <div class="container-fluid p-3 row justify-content-center">
+    <div class="row">
+     <div class="text-center">
+       © Copyright: Pipeline Staging Sales Management System
+     </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

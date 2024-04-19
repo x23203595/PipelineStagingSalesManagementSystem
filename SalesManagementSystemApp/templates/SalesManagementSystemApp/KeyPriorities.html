@@ -17,10 +17,10 @@
       <div class="collapse navbar-collapse justify-content-end">
         <ul class="navbar-nav">
            <li class="nav-item">
-               <a class="nav-link" href="#">About</a>
+               <a class="nav-link" href="{%url 'SalesManagementSystemApp:About'%}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sign Out</a>
+            <a class="nav-link"  href="{%url 'SalesManagementSystemApp:SignOut'%}">Sign Out</a>
           </li>
         </ul>
       </div>
@@ -72,17 +72,17 @@
                 </tr>
                 
                     <tr>
-                    <td><b>Save:</b></td>
+                    <td><b>Pipeline Stages:</b></td>
                     <td><b><a href="{% url 'SalesManagementSystemApp:HR' username=username company_name=company_name %}" 
-                    class="buttonColumn">Save</a></td>
-                    <td><b><a href="{% url 'SalesManagementSystemApp:
-                    CustomerService' username=username company_name=company_name %}" class="buttonColumn">Save</a></td>
-                    <td><b><a href="{% url 'SalesManagementSystemApp:
-                    IT' username=username company_name=company_name %}" class="buttonColumn">Save</a></td>
-                    <td><b><a href="{% url 'SalesManagementSystemApp:
-                    Sales'username=username company_name=company_name %}" class="buttonColumn">Save</a></td>
-                    <td><b><a href="{% url 'SalesManagementSystemApp:
-                    RD' username=username company_name=company_name %}" class="buttonColumn">Save</a></td>
+                    class="buttonColumn">HR</a></td>
+                    <td><b><a href="{% url 'SalesManagementSystemApp:CustService' username=username company_name=company_name %}" 
+                    class="buttonColumn">Cust Service</a></b></td>
+                    <td><b><a href="{% url 'SalesManagementSystemApp:IT' username=username company_name=company_name %}" 
+                    class="buttonColumn">IT</a></b></td>
+                    <td><b><a href="{% url 'SalesManagementSystemApp:Sales' username=username company_name=company_name %}" 
+                    class="buttonColumn">Sales</a></b></td>
+                    <td><b><a href="{% url 'SalesManagementSystemApp:RD' username=username company_name=company_name %}" 
+                    class="buttonColumn">R&D</a></b></td>
                     </tr>
             </tbody>
     </table>

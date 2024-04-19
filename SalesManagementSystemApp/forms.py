@@ -1,6 +1,6 @@
 from django import forms
 from django.core import validators
-from .models import Customer
+from .models import Customer, Admin, Stage, CustServiceStage, ITStage, SalesStage, RDStage
 
 class CustomerSignInForm(forms.Form):
     username = forms.CharField(label="Username")
@@ -51,3 +51,52 @@ class CustomerSignUpForm(forms.ModelForm):
             'password1': forms.PasswordInput(),
             'password2': forms.PasswordInput(),
         }
+
+class AdminSignInForm(forms.ModelForm):
+    """Form for Admin Page"""
+    username = forms.CharField(label="Username")
+    password = forms.CharField(label="Password", widget=forms.PasswordInput)
+    class Meta:
+        """Subclass for Admin"""
+        model = Admin
+        fields = ['username', 'password']
+        
+class StageForm(forms.ModelForm):
+    """Form for Stage"""
+    custom_stage = forms.CharField(label="Custom Stage")
+    class Meta:
+        """Subclass for Stage"""
+        model = Stage
+        fields = ['custom_stage']
+
+class CustServiceStageForm(forms.ModelForm):
+    """Form for Cust Service Stage"""
+    custom_stage = forms.CharField(label="Custom Stage")
+    class Meta:
+        """Subclass for Stage"""
+        model = CustServiceStage
+        fields = ['custom_stage']
+        
+class ITStageForm(forms.ModelForm):
+    """Form for Cust Service Stage"""
+    custom_stage = forms.CharField(label="Custom Stage")
+    class Meta:
+        """Subclass for Stage"""
+        model = ITStage
+        fields = ['custom_stage']
+        
+class SalesStageForm(forms.ModelForm):
+    """Form for Cust Service Stage"""
+    custom_stage = forms.CharField(label="Custom Stage")
+    class Meta:
+        """Subclass for Stage"""
+        model = SalesStage
+        fields = ['custom_stage']
+        
+class RDStageForm(forms.ModelForm):
+    """Form for Cust Service Stage"""
+    custom_stage = forms.CharField(label="Custom Stage")
+    class Meta:
+        """Subclass for Stage"""
+        model = RDStage
+        fields = ['custom_stage']
