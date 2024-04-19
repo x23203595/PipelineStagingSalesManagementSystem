@@ -28,7 +28,6 @@ distro==1.5.0
 Django==4.2.11
 docutils==0.16
 git-remote-codecommit==1.17
-gpg==1.15.1
 html5lib==1.1
 idna==2.10
 ikp3db==1.4.2
