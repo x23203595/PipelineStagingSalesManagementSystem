@@ -77,7 +77,7 @@
 <table class="table" border = "2">
         <thead>
             <tr>
-                <th scope="col">Key Priority: Craig Nott</th>
+                <th scope="col">Key Priority: Henry Baker</th>
             </tr>
         </thead>
         <tbody>
@@ -85,7 +85,7 @@
                 <tr>
                     <td>{{ d.custom_stage }}</td>
                     <td><a type="button" href="{% url 'SalesManagementSystemApp:RDTableUpdateStage' id=d.id username=username company_name=company_name  %}" class="btn btn-outline-primary">Edit</a></td>
-                    <td><a type="button" href="{% url 'SalesManagementSystemApp:RDTableDeleteStage' id=d.id username=username company_name=company_name %}" class="btn btn-outline-danger">Delete</a></td>
+                    <td><a type="button" href="{% url 'SalesManagementSystemApp:RDTableDeleteStage' id=d.id username=username company_name=company_name stage_name=d.custom_stage %}" class="btn btn-outline-danger">Delete</a></td>
                 </tr>
             {% endfor %}
         </tbody>
@@ -110,57 +110,7 @@
         </div>
     </div>
 </div>
-        
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    function addStageToTable(stageName) {
-        var tableBody = document.querySelector("#stageTable tbody");
-        var newRow = document.createElement("tr");
-        newRow.innerHTML = `
-            <td>${stageName}</td>
-            <td><a href="#" class="delete-link">Delete</a></td>
-        `;
-        tableBody.appendChild(newRow);
-    }
-
-    document.getElementById("addStageForm").addEventListener("submit", function(event) {
-        event.preventDefault(); 
-        var formData = new FormData(this); 
-        fetch("{% url 'SalesManagementSystemApp:RDTableInsertStage' username=username company_name=company_name%}", {
-            method: "POST",
-            body: formData,
-            headers: { "X-CSRFToken": "{{ csrf_token }}" }
-        })
-        .then(response => response.json())
-        .then(data => {
-            addStageToTable(data.name); 
-            document.getElementById("stage_name").value = "";
-        })
-        .catch(error => console.error("Error:", error));
-    });
-
-    document.getElementById("stageTable").addEventListener("click", function(event) {
-        if (event.target.classList.contains("delete-link")) {
-            event.preventDefault();
-            var deleteUrl = event.target.href;
-            fetch(deleteUrl, {
-                method: "POST",
-                headers: { "X-CSRFToken": "{{ csrf_token }}" }
-            })
-            .then(response => {
-                if (response.ok) {
-                    
-                    event.target.parentNode.parentNode.remove();
-                } else {
-                    console.error("Error:", response.statusText);
-                }
-            })
-            .catch(error => console.error("Error:", error));
-        }
-    });
-});
-</script>
-
+      
  {% endblock content %}
 <footer class="bg-dark text-white text-center text-lg-start fixed-bottom">
   <div class="container-fluid p-3 row justify-content-center">

@@ -72,18 +72,6 @@ def KeyPrioritiesMethod(request, username, company_name):
     """Key Priorities Page for Pipeline Staging Sales Management System"""
     return render(request, "SalesManagementSystemApp/KeyPriorities.html", {'username': username, 'company_name': company_name})
     
-def HRlist_stages(request):
-    """HR Stage Page for Pipeline Staging Sales Management System"""
-    stage_manager = PipelineStagingManager(bucket_name = 'x23203595pipelinestagingbucket')
-    stages = stage_manager.list_stages()
-    return render(request, 'SalesManagementSystemApp/HR.html', {'stages': stages})
-    
-def HRdelete_stage(request, stage_name):
-    """HR Delete Stage Page for Pipeline Staging Sales Management System"""
-    stage_manager = PipelineStagingManager(bucket_name='x23203595pipelinestagingbucket')
-    stage_manager.delete_stage(stage_name)
-    return redirect('SalesManagementSystemApp:HR')
-    
 def HRMethod(request, username, company_name):
     """HR Page for Pipeline Staging Sales Management System"""
     data = Stage.objects.all()
@@ -115,11 +103,16 @@ def HRTableUpdateStage(request, username, company_name, id):
     context = {'d': d, 'username': username, 'company_name': company_name}
     return render(request, 'SalesManagementSystemApp/HRUpdate.html', context)
 
-def HRTableDeleteStage(request, id, username, company_name):
+def HRTableDeleteStage(request, id, stage_name, username, company_name):
     """Method for Deleting Custom Stage"""
-    d = Stage.objects.get(id=id)
-    d.delete()
-    messages.error(request, "Stage deleted successfully")
+    stage_manager = PipelineStagingManager(bucket_name='x23203595pipelinestagingbucket')
+    stage_manager.delete_stage(stage_name)
+    try:
+        stage = Stage.objects.get(id=id)
+        stage.delete()
+        messages.success(request, "Stage deleted successfully")
+    except Stage.DoesNotExist:
+        messages.error(request, "Stage not found")
     return redirect('SalesManagementSystemApp:HR', username=username, company_name=company_name)
 
 def CustServiceMethod(request, username, company_name):
@@ -153,11 +146,16 @@ def CustServiceTableUpdateStage(request, username, company_name, id):
     context = {'d': d, 'username': username, 'company_name': company_name}
     return render(request, 'SalesManagementSystemApp/CustServiceUpdate.html', context)    
 
-def CustServiceTableDeleteStage(request, id, username, company_name):
+def CustServiceTableDeleteStage(request, id, stage_name, username, company_name):
     """Method for Deleting Custom Stage"""
-    d = CustServiceStage.objects.get(id=id)
-    d.delete()
-    messages.error(request, "Stage deleted successfully")
+    stage_manager = PipelineStagingManager(bucket_name='x23203595pipelinestagingbucket')
+    stage_manager.delete_stage(stage_name)
+    try:
+        stage = CustServiceStage.objects.get(id=id)
+        stage.delete()
+        messages.success(request, "Stage deleted successfully")
+    except CustServiceStage.DoesNotExist:
+        messages.error(request, "Stage not found")
     return redirect('SalesManagementSystemApp:CustService', username=username, company_name=company_name)
 
 def ITMethod(request, username, company_name):
@@ -191,11 +189,16 @@ def ITTableUpdateStage(request, username, company_name, id):
     context = {'d': d, 'username': username, 'company_name': company_name}
     return render(request, 'SalesManagementSystemApp/ITUpdate.html', context)
     
-def ITTableDeleteStage(request, id, username, company_name):
+def ITTableDeleteStage(request, id, stage_name, username, company_name):
     """Method for Deleting Custom Stage"""
-    d = ITStage.objects.get(id=id)
-    d.delete()
-    messages.error(request, "Stage deleted successfully")
+    stage_manager = PipelineStagingManager(bucket_name='x23203595pipelinestagingbucket')
+    stage_manager.delete_stage(stage_name)
+    try:
+        stage = ITStage.objects.get(id=id)
+        stage.delete()
+        messages.success(request, "Stage deleted successfully")
+    except ITStage.DoesNotExist:
+        messages.error(request, "Stage not found")
     return redirect('SalesManagementSystemApp:IT', username=username, company_name=company_name)
 
 def SalesMethod(request, username, company_name):
@@ -229,11 +232,16 @@ def SalesTableUpdateStage(request, username, company_name, id):
     context = {'d': d, 'username': username, 'company_name': company_name}
     return render(request, 'SalesManagementSystemApp/SalesUpdate.html', context)
 
-def SalesTableDeleteStage(request, id, username, company_name):
+def SalesTableDeleteStage(request, id, stage_name, username, company_name):
     """Method for Deleting Custom Stage"""
-    d = SalesStage.objects.get(id=id)
-    d.delete()
-    messages.error(request, "Stage deleted successfully")
+    stage_manager = PipelineStagingManager(bucket_name='x23203595pipelinestagingbucket')
+    stage_manager.delete_stage(stage_name)
+    try:
+        stage = SalesStage.objects.get(id=id)
+        stage.delete()
+        messages.success(request, "Stage deleted successfully")
+    except SalesStage.DoesNotExist:
+        messages.error(request, "Stage not found")
     return redirect('SalesManagementSystemApp:Sales', username=username, company_name=company_name)
     
 def RDMethod(request, username, company_name):
@@ -267,11 +275,16 @@ def RDTableUpdateStage(request, username, company_name, id):
     context = {'d': d, 'username': username, 'company_name': company_name}
     return render(request, 'SalesManagementSystemApp/RDUpdate.html', context)    
     
-def RDTableDeleteStage(request, id, username, company_name):
+def RDTableDeleteStage(request, id, stage_name, username, company_name):
     """Method for Deleting Custom Stage"""
-    d = RDStage.objects.get(id=id)
-    d.delete()
-    messages.error(request, "Stage deleted successfully")
+    stage_manager = PipelineStagingManager(bucket_name='x23203595pipelinestagingbucket')
+    stage_manager.delete_stage(stage_name)
+    try:
+        stage = RDStage.objects.get(id=id)
+        stage.delete()
+        messages.success(request, "Stage deleted successfully")
+    except RDStage.DoesNotExist:
+        messages.error(request, "Stage not found")
     return redirect('SalesManagementSystemApp:RD', username=username, company_name=company_name)    
     
 def AdminSignInMethod(request):
