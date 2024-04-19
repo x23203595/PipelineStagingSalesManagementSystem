@@ -5,8 +5,8 @@ app_name = 'SalesManagementSystemApp'
 urlpatterns = [
     path('', views.HomePageMethod, name='Home'),
     path('admin/',views.AdminPageMethod,name='Admin'),
-    
     path('SalesManagementSystemApp/Home/About', views.AboutPageMethod,name='About'),
+    
     path('SalesManagementSystemApp/Home/AdminAbout', views.AdminAboutPageMethod,name='AdminAbout'),
     path('SalesManagementSystemApp/Home/AdminSignOut', views.AdminSignOutPageMethod,name='AdminSignOut'),
     path('SalesManagementSystemApp/Home/AdminSignIn/',views.AdminSignInMethod, name='AdminSignInPage'),
