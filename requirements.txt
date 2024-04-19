@@ -101,7 +101,6 @@ SecretStorage==3.3.3
 semantic-version==2.8.5
 six==1.15.0
 sqlparse==0.4.4
-support-info==1.0
 svglib==1.5.1
 termcolor==1.1.0
 tinycss2==1.2.1
