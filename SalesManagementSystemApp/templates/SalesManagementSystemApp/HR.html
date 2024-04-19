@@ -36,6 +36,7 @@
                     <a class="nav-link" 
                 href="{%url 'SalesManagementSystemApp:SignOut'%}">Sign About</a>
                 </li>
+                </ul>
         </div>
     </div>
   </nav>
@@ -106,6 +107,9 @@
                         <button class="btn btn-success" type="submit">Submit</button>
                     </div>
                 </form>
+                <div class="d-grid gap-2">
+                    <a href="{% url 'SalesManagementSystemApp:HRTableGenerate_PDF' username=username company_name=company_name %}" class="btn btn-primary">Generate PDF Report</a>
+                </div>
             </div>
         </div>
     </div>

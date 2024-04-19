@@ -4,7 +4,9 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import messages
 from .forms import CustomerSignUpForm, CustomerSignInForm, AdminSignInForm, StageForm, CustServiceStageForm, ITStageForm, SalesStageForm, RDStageForm
 from .models import Customer, Admin, Stage, CustServiceStage, ITStage, SalesStage, RDStage
+from xhtml2pdf import pisa
 from django.template import loader
+from django.template.loader import get_template
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from pipeline_staging_properties_pkg.pipeline_staging_properties import PipelineStagingManager
@@ -115,6 +117,20 @@ def HRTableDeleteStage(request, id, stage_name, username, company_name):
     except Stage.DoesNotExist:
         messages.error(request, "Stage not found")
     return redirect('SalesManagementSystemApp:HR', username=username, company_name=company_name)
+    
+def HRTableGenerate_PDF(request, username, company_name):
+    """PDF for HR Report"""
+    data = Stage.objects.all()
+    template_path = 'SalesManagementSystemApp/HRReport.html'
+    context = {'data': data, 'username': username, 'company_name': company_name}
+    template = get_template(template_path)
+    html = template.render(context)
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="HRTableReport.pdf"'
+    pisa_status = pisa.CreatePDF(html, dest=response)
+    if pisa_status.err:
+        return HttpResponse('PDF generation error')
+    return response
 
 def CustServiceMethod(request, username, company_name):
     """Customer Service Page for Pipeline Staging Sales Management System"""
@@ -159,6 +175,20 @@ def CustServiceTableDeleteStage(request, id, stage_name, username, company_name)
         messages.error(request, "Stage not found")
     return redirect('SalesManagementSystemApp:CustService', username=username, company_name=company_name)
 
+def CustServiceTableGenerate_PDF(request, username, company_name):
+    """PDF Report For Cust Service """
+    data = CustServiceStage.objects.all()
+    template_path = 'SalesManagementSystemApp/CustServiceReport.html'
+    context = {'data': data, 'username': username, 'company_name': company_name}
+    template = get_template(template_path)
+    html = template.render(context)
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="CustServiceTableReport.pdf"'
+    pisa_status = pisa.CreatePDF(html, dest=response)
+    if pisa_status.err:
+        return HttpResponse('PDF generation error')
+    return response
+
 def ITMethod(request, username, company_name):
     """IT Page for Pipeline Staging Sales Management System"""
     data = ITStage.objects.all()
@@ -202,6 +232,20 @@ def ITTableDeleteStage(request, id, stage_name, username, company_name):
         messages.error(request, "Stage not found")
     return redirect('SalesManagementSystemApp:IT', username=username, company_name=company_name)
 
+def ITTableGenerate_PDF(request, username, company_name):
+    """PDF Report For IT"""
+    data = ITStage.objects.all()
+    template_path = 'SalesManagementSystemApp/ITReport.html'
+    context = {'data': data, 'username': username, 'company_name': company_name}
+    template = get_template(template_path)
+    html = template.render(context)
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="ITTableReport.pdf"'
+    pisa_status = pisa.CreatePDF(html, dest=response)
+    if pisa_status.err:
+        return HttpResponse('PDF generation error')
+    return response
+
 def SalesMethod(request, username, company_name):
     """Sales Page for Pipeline Staging Sales Management System"""
     data = SalesStage.objects.all()
@@ -244,7 +288,21 @@ def SalesTableDeleteStage(request, id, stage_name, username, company_name):
     except SalesStage.DoesNotExist:
         messages.error(request, "Stage not found")
     return redirect('SalesManagementSystemApp:Sales', username=username, company_name=company_name)
-    
+
+def SalesTableGenerate_PDF(request, username, company_name):
+    """PDF Report For Sales"""
+    data = SalesStage.objects.all()
+    template_path = 'SalesManagementSystemApp/SalesReport.html'
+    context = {'data': data, 'username': username, 'company_name': company_name}
+    template = get_template(template_path)
+    html = template.render(context)
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="SalesTableReport.pdf"'
+    pisa_status = pisa.CreatePDF(html, dest=response)
+    if pisa_status.err:
+        return HttpResponse('PDF generation error')
+    return response
+
 def RDMethod(request, username, company_name):
     """RD Page for Pipeline Staging Sales Management System"""
     data = RDStage.objects.all()
@@ -287,6 +345,20 @@ def RDTableDeleteStage(request, id, stage_name, username, company_name):
     except RDStage.DoesNotExist:
         messages.error(request, "Stage not found")
     return redirect('SalesManagementSystemApp:RD', username=username, company_name=company_name)    
+
+def RDTableGenerate_PDF(request, username, company_name):
+    """PDF Report For RD"""
+    data = RDStage.objects.all()
+    template_path = 'SalesManagementSystemApp/RDReport.html'
+    context = {'data': data, 'username': username, 'company_name': company_name}
+    template = get_template(template_path)
+    html = template.render(context)
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="RDTableReport.pdf"'
+    pisa_status = pisa.CreatePDF(html, dest=response)
+    if pisa_status.err:
+        return HttpResponse('PDF generation error')
+    return response
     
 def AdminSignInMethod(request):
     """Sign Up Page for Admin"""
