@@ -8,6 +8,7 @@ from django.template import loader
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from pipeline_staging_properties_pkg.pipeline_staging_properties import PipelineStagingManager
+from botocore.exceptions import ClientError
 import boto3
 
 def HomePageMethod(request):
@@ -98,7 +99,7 @@ def HRTableUpdateStage(request, username, company_name, id):
         update.custom_stage = custom_stage
         update.save()
         messages.warning(request, "Stage updated successfully")
-        return redirect('SalesManagementSystemApp:HR', username=username, company_name=company_name)  
+        return redirect('SalesManagementSystemApp:HR', username=username, company_name=company_name) 
     d = Stage.objects.get(id=id)
     context = {'d': d, 'username': username, 'company_name': company_name}
     return render(request, 'SalesManagementSystemApp/HRUpdate.html', context)
@@ -144,7 +145,7 @@ def CustServiceTableUpdateStage(request, username, company_name, id):
         return redirect('SalesManagementSystemApp:CustService', username=username, company_name=company_name)  
     d = CustServiceStage.objects.get(id=id)
     context = {'d': d, 'username': username, 'company_name': company_name}
-    return render(request, 'SalesManagementSystemApp/CustServiceUpdate.html', context)    
+    return render(request, 'SalesManagementSystemApp/CustServiceUpdate.html', context)
 
 def CustServiceTableDeleteStage(request, id, stage_name, username, company_name):
     """Method for Deleting Custom Stage"""
@@ -184,7 +185,7 @@ def ITTableUpdateStage(request, username, company_name, id):
         update.custom_stage = custom_stage
         update.save()
         messages.warning(request, "Stage updated successfully")
-        return redirect('SalesManagementSystemApp:IT', username=username, company_name=company_name)  
+        return redirect('SalesManagementSystemApp:IT', username=username, company_name=company_name) 
     d = ITStage.objects.get(id=id)
     context = {'d': d, 'username': username, 'company_name': company_name}
     return render(request, 'SalesManagementSystemApp/ITUpdate.html', context)
@@ -227,7 +228,7 @@ def SalesTableUpdateStage(request, username, company_name, id):
         update.custom_stage = custom_stage
         update.save()
         messages.warning(request, "Stage updated successfully")
-        return redirect('SalesManagementSystemApp:Sales', username=username, company_name=company_name)  
+        return redirect('SalesManagementSystemApp:Sales', username=username, company_name=company_name) 
     d = SalesStage.objects.get(id=id)
     context = {'d': d, 'username': username, 'company_name': company_name}
     return render(request, 'SalesManagementSystemApp/SalesUpdate.html', context)
@@ -270,10 +271,10 @@ def RDTableUpdateStage(request, username, company_name, id):
         update.custom_stage = custom_stage
         update.save()
         messages.warning(request, "Stage updated successfully")
-        return redirect('SalesManagementSystemApp:RD', username=username, company_name=company_name)  
+        return redirect('SalesManagementSystemApp:RD', username=username, company_name=company_name) 
     d = RDStage.objects.get(id=id)
     context = {'d': d, 'username': username, 'company_name': company_name}
-    return render(request, 'SalesManagementSystemApp/RDUpdate.html', context)    
+    return render(request, 'SalesManagementSystemApp/RDUpdate.html', context)
     
 def RDTableDeleteStage(request, id, stage_name, username, company_name):
     """Method for Deleting Custom Stage"""
