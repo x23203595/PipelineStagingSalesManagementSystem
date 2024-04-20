@@ -128,7 +128,7 @@ STATICFILES_DIRS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://a053577d19144d8194bcba131dba98a4.vfs.cloud9.eu-west-1.amazonaws.com'
+    'https://a053577d19144d8194bcba131dba98a4.vfs.cloud9.eu-west-1.amazonaws.com',
     'https://x23203595pipelinestagingnineteen.eba-fp6mvn2f.eu-west-1.elasticbeanstalk.com',
     'http://x23203595pipelinestagingnineteen.eba-fp6mvn2f.eu-west-1.elasticbeanstalk.com',
 ]
