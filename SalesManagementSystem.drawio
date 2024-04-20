@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-20T21:51:00.126Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="IGGFWO1PbfVzbh2r4Oyv" version="24.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-20T21:55:57.898Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="UhuhPndSkUC8Pfqd0QIK" version="24.2.7" type="github">
   <diagram name="Page-1" id="mJo-rlMSn84zewNQrQVx">
     <mxGraphModel dx="1050" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -210,6 +210,21 @@
             <mxPoint x="410" y="370" as="sourcePoint" />
             <mxPoint x="433" y="369.5" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-51" value="CustService&lt;div&gt;Key Priority : John Stone&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="227" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-52" value="HR&lt;div&gt;Key Priority : Charles Harris&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="599" y="139" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-53" value="IT&lt;div&gt;Key Priority : Algie Rivers&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="601" y="299" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-54" value="RD&lt;div&gt;Key Priority : Craig Nott&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-55" value="Sales&lt;div&gt;Key Priority : Henry Baker&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="460" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
