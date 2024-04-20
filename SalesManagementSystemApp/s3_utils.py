@@ -22,7 +22,6 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('bucket_name', help='The name of the bucket.')
     parser.add_argument('--region', default='eu-west-1', help='The region of the bucket.')
-    region = 'eu-west-1'
     args = parser.parse_args()
     create_bucket(args.bucket_name, region=args.region)
 if __name__ == '__main__':
