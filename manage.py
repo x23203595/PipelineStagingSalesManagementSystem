@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+"""Manage for Pipeline Staging Sales Management System"""
 import os
 import sys
 
