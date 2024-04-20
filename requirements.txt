@@ -4,7 +4,6 @@ asn1crypto==1.5.1
 astroid==2.15.5
 attrs==20.3.0
 awscrt==0.19.19
-awsebcli==3.20.10
 Babel==2.9.1
 backports.tarfile==1.1.0
 blessed==1.20.0
@@ -25,7 +24,6 @@ dill==0.3.8
 distro==1.5.0
 Django==4.2.11
 docutils==0.16
-git-remote-codecommit==1.17
 html5lib==1.1
 idna==2.10
 ikp3db==1.4.2
@@ -94,7 +92,6 @@ rfc3986==2.0.0
 rich==13.7.1
 ruamel.yaml==0.16.6
 ruamel.yaml.clib==0.1.2
-s3transfer==0.10.1
 SecretStorage==3.3.3
 semantic-version==2.8.5
 six==1.15.0
