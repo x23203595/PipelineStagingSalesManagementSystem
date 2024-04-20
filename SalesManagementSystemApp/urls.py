@@ -27,7 +27,7 @@ urlpatterns = [
     views.CustomerSignUp,name='SignUp'),
     path('SalesManagementSystemApp/KeyPriorities/signin',
     views.CustomerSignIn, name='SignIn'),
-    path('SalesManagementSystemApp//KeyPriorities/signout/',
+    path('SalesManagementSystemApp/KeyPriorities/signout/',
     views.CustomerSignOut,name='SignOut'),
     path('SalesManagementSystemApp/KeyPriorities/<str:username>/<str:company_name>/',
     views.KeyPrioritiesMethod,name='KeyPriorities'),
