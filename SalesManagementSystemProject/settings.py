@@ -25,7 +25,8 @@ SECRET_KEY = 'v9e-#k61n(0q3_)u4i)p5a4-#0tpvos4ag1rnn5c9@vh@g6gee'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['a053577d19144d8194bcba131dba98a4.vfs.cloud9.eu-west-1.amazonaws.com']
+ALLOWED_HOSTS = ['a053577d19144d8194bcba131dba98a4.vfs.cloud9.eu-west-1.amazonaws.com', 
+'x23203595pipelinestagingnineteen.eba-fp6mvn2f.eu-west-1.elasticbeanstalk.com']
 
 
 # Application definition
@@ -125,7 +126,9 @@ STATICFILES_DIRS = (
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://a053577d19144d8194bcba131dba98a4.vfs.cloud9.eu-west-1.amazonaws.com',
+    'https://a053577d19144d8194bcba131dba98a4.vfs.cloud9.eu-west-1.amazonaws.com'
+    'https://x23203595pipelinestagingnineteen.eba-fp6mvn2f.eu-west-1.elasticbeanstalk.com',
+    'http://x23203595pipelinestagingnineteen.eba-fp6mvn2f.eu-west-1.elasticbeanstalk.com',
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
