@@ -313,7 +313,7 @@ def RDTableInsertStage(request, username, company_name):
         return redirect('SalesManagementSystemApp:RD',username=username,
         company_name=company_name)
     return render(request, 'SalesManagementSystemApp/RD.html',
-    {'username':username, 'company_name':company_name})    
+    {'username':username, 'company_name':company_name})
 def RDTableUpdateStage(request, username, company_name, id):
     """Method for Updating Custom Stage"""
     if request.method == "POST":
@@ -338,7 +338,7 @@ def RDTableDeleteStage(request, id, stage_name, username, company_name):
     except RDStage.DoesNotExist:
         messages.error(request, "Stage not found")
     return redirect('SalesManagementSystemApp:RD',username=username,
-    company_name=company_name)    
+    company_name=company_name)
 def RDTableGenerate_PDF(request, username, company_name):
     """PDF Report For RD"""
     data = RDStage.objects.all()

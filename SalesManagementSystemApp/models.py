@@ -41,3 +41,4 @@ class RDStage(models.Model):
     custom_stage = models.CharField(max_length=150)
     def __str__(self):
         return str(self.custom_stage)
+        
