@@ -8,8 +8,6 @@ awsebcli==3.20.10
 Babel==2.9.1
 backports.tarfile==1.1.0
 blessed==1.20.0
-boto3==1.34.88
-botocore>=1.23.41,<1.35.0
 build==1.2.1
 cement==2.8.2
 certifi==2024.2.2
