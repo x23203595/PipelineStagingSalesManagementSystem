@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-20T21:49:30.586Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="_M83Y1-xR_jUqTc45S4_" version="24.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-20T21:51:00.126Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="IGGFWO1PbfVzbh2r4Oyv" version="24.2.7" type="github">
   <diagram name="Page-1" id="mJo-rlMSn84zewNQrQVx">
     <mxGraphModel dx="1050" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -145,7 +145,7 @@
             <mxPoint x="520" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-36" value="Customer Registration / Welcome" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-36" value="Customer Registration / Home" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="281" y="340" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rjxhquQ0YUwU6D_5x0ZY-37" value="Sign Out" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -163,10 +163,10 @@
             <mxPoint x="281" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-41" value="Customer Sign In&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-41" value="Key Priorities" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="433" y="340" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-42" value="About Customer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-42" value="About Us" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="433" y="440" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rjxhquQ0YUwU6D_5x0ZY-43" value="" style="endArrow=none;html=1;rounded=0;exitX=0.342;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="rjxhquQ0YUwU6D_5x0ZY-42">
