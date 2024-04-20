@@ -1,0 +1,52 @@
+/*styling for Admin Student Style*/
+.custom-KeyPriorityDepartmentHeading {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.columnDepartment {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.columnKeyPriority,
+.columnSave,
+.columnDepartment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin: 0 55px;
+}
+.buttonColumn {
+    background-color: #008000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px; 
+}
+.buttonColumn:hover {
+    background-color: #006400;
+}
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  background-color: #008000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px; 
+}
+.password1align{
+    margin-bottom: 20px;
+}
+.password2align{
+    margin-bottom: 20px;
+}
