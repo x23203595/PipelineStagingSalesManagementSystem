@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-20T22:42:32.656Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="CeKR-tq8HlkSsryUmmBL" version="24.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-20T22:51:21.195Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="zlvHk_g3NJAb2jGWQrdh" version="24.2.7" type="github">
   <diagram name="Page-1" id="mJo-rlMSn84zewNQrQVx">
     <mxGraphModel dx="1050" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -7,16 +7,16 @@
         <mxCell id="rjxhquQ0YUwU6D_5x0ZY-1" value="DB SQLITE" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="121" y="41" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-2" value="Default Admin&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-2" value="DEFAULT ADMIN" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="121" y="179" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-3" value="Admin Customer" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-3" value="ADMIN CUSTOMER" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="280" y="180" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-4" value="About Admin" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-4" value="ABOUT ADMIN" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="392" y="60" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-5" value="Admin Customer List" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-5" value="ADMIN CUSTOMER LIST" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="439" y="180" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rjxhquQ0YUwU6D_5x0ZY-6" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" edge="1" parent="1">
@@ -61,10 +61,10 @@
             <mxPoint x="260" y="120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-16" value="Admin Sign In" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-16" value="ADMIN SIGN IN" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="40" y="311" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-17" value="Admin Sign Out" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-17" value="ADMIN SIGN OUT" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="40" y="391" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rjxhquQ0YUwU6D_5x0ZY-19" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" edge="1" parent="1">
@@ -145,10 +145,10 @@
             <mxPoint x="520" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-36" value="Customer Registration / Home" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-36" value="CUSTOMER REGISTRATION / HOME" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="281" y="340" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-37" value="Sign Out" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-37" value="SIGN OUT" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="520" y="539" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rjxhquQ0YUwU6D_5x0ZY-39" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=1;entryDx=0;entryDy=0;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" edge="1" parent="1">
@@ -163,10 +163,10 @@
             <mxPoint x="281" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-41" value="Key Priorities" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-41" value="KEY PRIORITIES" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="433" y="340" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-42" value="About Us" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-42" value="ABOUT US" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="433" y="440" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rjxhquQ0YUwU6D_5x0ZY-43" value="" style="endArrow=none;html=1;rounded=0;exitX=0.342;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" edge="1" parent="1" source="rjxhquQ0YUwU6D_5x0ZY-42">
@@ -211,19 +211,19 @@
             <mxPoint x="433" y="369.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-51" value="CustService Pipeline Stage&lt;div style=&quot;font-size: 13px;&quot;&gt;Key Priority : John Stone&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-51" value="CUSTSERVICE PIPELINE STAGE&lt;div style=&quot;font-size: 13px;&quot;&gt;KEY PRIORITY : JOHN STONE&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="620" y="227" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-52" value="HR Pipeline Stage&lt;div style=&quot;font-size: 13px;&quot;&gt;Key Priority : Charles Harris&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-52" value="HR PIPELINE STAGE : KEY PRIORITY : CHARLES HARRIS" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="619" y="139" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-53" value="IT Pipeline Stage&lt;div style=&quot;font-size: 13px;&quot;&gt;Key Priority : Algie Rivers&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-53" value="IT PIPELINE STAGE&lt;div style=&quot;font-size: 13px;&quot;&gt;KEY PRIORITY : ALGIE RIVERS&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="621" y="299" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-54" value="Sales Pipeline Stage&lt;div style=&quot;font-size: 13px;&quot;&gt;Key Priority : Henry Baker&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-54" value="SALES PIPELINE STAGE&lt;div style=&quot;font-size: 13px;&quot;&gt;KEY PRIORITY : HENRY BAKER&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="620" y="380" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-55" value="RD Pipeline Stage&lt;div style=&quot;font-size: 13px;&quot;&gt;Key Priority : Craig Nott&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-55" value="RD PIPELINE STAGE&lt;div style=&quot;font-size: 13px;&quot;&gt;KEY PRIORITY : CRAIG NOTT&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="620" y="460" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rjxhquQ0YUwU6D_5x0ZY-56" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" edge="1" parent="1">
@@ -352,19 +352,19 @@
             <mxPoint x="620" y="425" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-84" value="HR Report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-84" value="HR REPORT" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="761" y="139" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-85" value="CustService Report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-85" value="CUSTSERVICE REPORT" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="760" y="227" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-86" value="IT Report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-86" value="IT REPORT" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="761" y="299" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-87" value="RD Report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-87" value="RD REPORT" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="760" y="380" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-88" value="Sales Report" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-88" value="SALES REPORT" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="761" y="460" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rjxhquQ0YUwU6D_5x0ZY-89" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" edge="1" parent="1">
@@ -397,19 +397,19 @@
             <mxPoint x="761" y="481" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-96" value="HR Update" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-96" value="HR UPDATE" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="530" y="60" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-97" value="CustService Update" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-97" value="CUSTSERVICE UPDATE" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="670" y="49" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-98" value="IT Update" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-98" value="IT UPDATE" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="807" y="49" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-99" value="Sales Update" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-99" value="SALES UPDATE" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="950" y="49" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-100" value="RD Update" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+        <mxCell id="rjxhquQ0YUwU6D_5x0ZY-100" value="RD UPDATE" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" vertex="1" parent="1">
           <mxGeometry x="1089" y="49" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rjxhquQ0YUwU6D_5x0ZY-103" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;fontStyle=1;fontSize=13;" edge="1" parent="1">
