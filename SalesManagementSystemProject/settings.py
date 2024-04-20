@@ -121,12 +121,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = 'static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-STATICFILES_DIRS = (
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'SalesManagementSystemApp/static'),
-)
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://a053577d19144d8194bcba131dba98a4.vfs.cloud9.eu-west-1.amazonaws.com'
