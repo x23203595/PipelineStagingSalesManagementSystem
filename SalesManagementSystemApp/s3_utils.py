@@ -1,8 +1,9 @@
+"""Creation of S3 Bucket"""
 import logging
 import boto3
 from botocore.exceptions import ClientError
-
 def create_bucket(bucket_name, region=None):
+    """Creating Sample Buckets """
     try:
         if region is None:
             s3_client = boto3.client('s3')
@@ -16,7 +17,6 @@ def create_bucket(bucket_name, region=None):
         logging.error(e)
         return False
     return True
-    
 def main():
     import argparse
     parser = argparse.ArgumentParser()
@@ -25,6 +25,5 @@ def main():
     region = 'eu-west-1'
     args = parser.parse_args()
     create_bucket(args.bucket_name, region=args.region)
-
 if __name__ == '__main__':
  main()

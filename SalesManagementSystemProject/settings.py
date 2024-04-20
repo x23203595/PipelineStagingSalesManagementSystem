@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
+from django.contrib.messages import constants as messages
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -25,7 +26,7 @@ SECRET_KEY = 'v9e-#k61n(0q3_)u4i)p5a4-#0tpvos4ag1rnn5c9@vh@g6gee'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['a053577d19144d8194bcba131dba98a4.vfs.cloud9.eu-west-1.amazonaws.com', 
+ALLOWED_HOSTS = ['a053577d19144d8194bcba131dba98a4.vfs.cloud9.eu-west-1.amazonaws.com',
 'x23203595pipelinestagingnineteen.eba-fp6mvn2f.eu-west-1.elasticbeanstalk.com']
 
 
@@ -134,8 +135,6 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-from django.contrib.messages import constants as messages
 
 MESSAGE_TAGS={
     messages.ERROR:'danger'

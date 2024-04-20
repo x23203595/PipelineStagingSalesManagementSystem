@@ -1,6 +1,5 @@
+"""Base Classes for Admin, Stage, CustServiceStage, ITStage, SalesStage, RDStage"""
 from django.contrib import admin
-
-# Register your models here.
 from .models import Customer, Admin, Stage, CustServiceStage, ITStage, SalesStage, RDStage
 admin.site.register(Customer)
 admin.site.register(Admin)
