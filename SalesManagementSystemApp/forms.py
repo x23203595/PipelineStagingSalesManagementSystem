@@ -13,7 +13,7 @@ class CustomerSignUpForm(forms.ModelForm):
     phone_regex = r'^\+?1?\d{9,15}$'
     min_length = 1
     max_length = 25
-    error_message = "Phone number must be entered in the format: '+999999999'. Up to 15 digits is allowed."
+    error_message="Phone number must be entered in the format: '+999999999'. Up to 15 digits is allowed."
     validation_msg_min = "Should have at least {} characters".format(min_length)
     validation_msg_max = "Should have at most {} characters".format(max_length)
     first_name = forms.CharField(validators=[
@@ -39,6 +39,7 @@ class CustomerSignUpForm(forms.ModelForm):
     password1 = forms.CharField(label='Password', widget=forms.PasswordInput)
     password2 = forms.CharField(label='Confirm Password', widget=forms.PasswordInput)
     class Meta:
+        """Subclass for Customer"""
         model = Customer
         fields = ['first_name', 'last_name', 'username', 'company_name', 'password1', 'password2']
         widgets = {

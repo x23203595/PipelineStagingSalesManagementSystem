@@ -7,7 +7,7 @@ urlpatterns = [
     path('admin/',views.AdminPageMethod,name='Admin'),
     path('SalesManagementSystemApp/Home/About', views.AboutPageMethod,
     name='About'),
-    path('SalesManagementSystemApp/Home/AdminAbout', 
+    path('SalesManagementSystemApp/Home/AdminAbout',
     views.AdminAboutPageMethod,name='AdminAbout'),
     path('SalesManagementSystemApp/Home/AdminSignOut',
     views.AdminSignOutPageMethod,name='AdminSignOut'),

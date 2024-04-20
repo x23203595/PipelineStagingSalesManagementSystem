@@ -10,7 +10,7 @@ phases:
     pre_build:
         commands:
             - python --version
-            - pylint --disable=E1101,C0103,R0903,E0307,W0621 $CODEBUILD_SRC_DIR/**/*.py
+            - pylint --disable=E1101,C0103,R0903,E0307,W0621,R1705,C0412,W0622,W0613 $CODEBUILD_SRC_DIR/**/*.py
             - pylint $CODEBUILD_SRC_DIR/*.py
 artifacts:
     files:

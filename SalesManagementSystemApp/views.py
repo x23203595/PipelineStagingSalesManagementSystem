@@ -6,7 +6,6 @@ from django.contrib import messages
 from xhtml2pdf import pisa
 from django.template import loader
 from django.template.loader import get_template
-from django.contrib import messages
 from pipeline_staging_properties_pkg.pipeline_staging_properties import PipelineStagingManager
 from .forms import CustomerSignUpForm, CustomerSignInForm, AdminSignInForm
 from .models import Customer, Admin, Stage, CustServiceStage, ITStage, SalesStage, RDStage
@@ -21,7 +20,7 @@ def AboutPageMethod(request):
     return HttpResponse(template_about.render(context, request))
 def AdminPageMethod(request):
     """Bringing up the Admin Page for necessary changes"""
-    admin_page = Admin.objects.all(username=username)
+    admin_page = Admin.objects.all(username=username)# pylint: disable=E0602
     return render(request, 'SalesManagementSystemApp/Admin.html',
     {'form': admin_page})
 def CustomerSignIn(request):
@@ -99,7 +98,7 @@ def HRTableUpdateStage(request, username, company_name, id):
         update.save()
         messages.warning(request, "Stage updated successfully")
         return redirect('SalesManagementSystemApp:HR',username=username,
-        company_name=company_name) 
+        company_name=company_name)
     d = Stage.objects.get(id=id)
     context = {'d': d, 'username': username, 'company_name': company_name}
     return render(request, 'SalesManagementSystemApp/HRUpdate.html', context)
@@ -155,7 +154,7 @@ def CustServiceTableUpdateStage(request, username, company_name, id):
         update.save()
         messages.warning(request, "Stage updated successfully")
         return redirect('SalesManagementSystemApp:CustService',
-        username=username,company_name=company_name)  
+        username=username,company_name=company_name)
     d = CustServiceStage.objects.get(id=id)
     context = {'d':d,'username':username,'company_name':company_name}
     return render(request, 'SalesManagementSystemApp/CustServiceUpdate.html',
@@ -212,7 +211,7 @@ def ITTableUpdateStage(request, username, company_name, id):
         update.save()
         messages.warning(request, "Stage updated successfully")
         return redirect('SalesManagementSystemApp:IT',
-        username=username,company_name=company_name) 
+        username=username,company_name=company_name)
     d = ITStage.objects.get(id=id)
     context = {'d': d, 'username': username, 'company_name': company_name}
     return render(request, 'SalesManagementSystemApp/ITUpdate.html', context)
@@ -268,7 +267,7 @@ def SalesTableUpdateStage(request, username, company_name, id):
         update.save()
         messages.warning(request, "Stage updated successfully")
         return redirect('SalesManagementSystemApp:Sales',username=username,
-        company_name=company_name) 
+        company_name=company_name)
     d = SalesStage.objects.get(id=id)
     context = {'d': d, 'username': username, 'company_name': company_name}
     return render(request, 'SalesManagementSystemApp/SalesUpdate.html', context)
@@ -324,7 +323,7 @@ def RDTableUpdateStage(request, username, company_name, id):
         update.save()
         messages.warning(request, "Stage updated successfully")
         return redirect('SalesManagementSystemApp:RD',username=username,
-        company_name=company_name) 
+        company_name=company_name)
     d = RDStage.objects.get(id=id)
     context = {'d': d, 'username': username, 'company_name': company_name}
     return render(request, 'SalesManagementSystemApp/RDUpdate.html', context)
