@@ -25,7 +25,7 @@ Custom Library for template-based PDF:
 Static Code Analysis:
 - Pylint 2.17.4
 
-**setup.py:** pkg-newfinalcustom-pipeline-staging-final 0.1.0
+**setup.py:** custom-pipeline-stages-manager 0.1.0
 
 Custom Packages for AWS S3 Facilitation:
 - boto3 1.34.88
@@ -113,13 +113,13 @@ Publish the library to PyPI:
 Install (i.e. via pip) the distribution package/library:
 
 ```bash
-  python3 -m pip install --index-url https://pypi.org/simple --no-deps pkg-newfinalcustom-pipeline-staging-final==0.1.0
+  python3 -m pip install --index-url https://pypi.org/simple --no-deps custom-pipeline-stages-manager==0.1.0
 ```
 Information about the installed library:
 
 ```bash
   pip list
-  pip show pkg-newfinalcustom-pipeline-staging-final
+  pip show custom-pipeline-stages-manager
 ```
 
 
@@ -143,7 +143,7 @@ Build Specification reference for CodeBuild :
 - setup.py
 Metadata of Custom Library :
 ```bash
- pkg-newfinalcustom-pipeline-staging-final 
+ custom-pipeline-stages-manager
  version=0.1.0
 ```
 - requirements.txt
@@ -174,7 +174,7 @@ nh3==0.2.17
 packaging==24.0
 pillow==10.3.0
 pkginfo==1.10.0
-pkg-newfinalcustom-pipeline-staging-final==0.1.0
+custom-pipeline-stages-manager==0.1.0
 pycparser==2.22
 Pygments==2.17.2
 pyproject_hooks==1.0.0
